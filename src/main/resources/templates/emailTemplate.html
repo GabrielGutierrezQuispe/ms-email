@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #007bff;
+        }
+        .header {
+            background-color: #007bff;
+            padding: 20px;
+            color: #ffffff;
+            text-align: left;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 30px;
+            font-size: 16px;
+            color: #333333;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            padding: 8px 16px;
+            background: transparent;
+            color: #007bff;
+            text-decoration: none;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            color: #666666;
+            background-color: #f9f9f9;
+            border-top: 1px solid #eaeaea;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">Hola, ${username}!</div>
+    <div class="content">
+        <p>${mainMessage}</p>
+        <p>Haz clic en el siguiente botón para más información:</p>
+        <a href="${link}" class="button">Visita nuestra página</a>
+    </div>
+    <div class="footer">
+        © 2024 ArtemioSolutions - Todos los derechos reservados | <a href="#">Política de Privacidad</a>
+    </div>
+</div>
+</body>
+</html>
